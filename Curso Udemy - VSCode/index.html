@@ -235,18 +235,104 @@ OBS: é possivel utilizar CSS para estilizar as tabelas, como bordas, cores, fon
 
 <h3>Exemplo: Login</h3>
 
-<form action="">
+<form action="processa.php" method="post">
 
     Login<br>
     <input type="text" name="login"><br>
 
     Senha<br>
     <input type="password" name="senha"><br>
-    <input type="button" value="">
+    <input type="button" value="Logar">
+    <input type="submit" value="Enviar">
+
+    <!--Utilizando uma linguagem de programação é possivel usar o Name para recuperar alguma informação no banco de dados-->
+
+    <!--Action: o método de verificação de dados/busca de dados/envio de dados-->
+    <!--O método GET envia os dados do formulário como parâmetros na URL, o que pode ser útil para pesquisas ou filtros, mas não é recomendado para dados sensíveis, como senhas.-->
+    <!--O método POST envia os dados do formulário no corpo da requisição, o que é mais seguro para dados sensíveis, como senhas.-->
+    <!--O método PUT é usado para atualizar dados existentes, enquanto o método DELETE é usado para excluir dados. Ambos são menos comuns em formulários, mas podem ser usados em APIs ou sistemas mais complexos.-->
+    <!--o método Dialog -->
+    <input type="hidden" name="id" value="12345">
+    <!--OBS: o método hidden é usado para enviar dados que não são visíveis para o usuário, como IDs ou informações de sessão.-->
+    <input type="reset" value="Limpar">
+    <!--OBS: o método reset é usado para limpar os campos do formulário, retornando aos valores padrão.-->
+    <input type="file" name="arquivo">
+    <!--OBS: o método file é usado para enviar arquivos, como imagens ou documentos, através do formulário.-->
+    <!--OBS: o método de envio de dados é importante para a segurança e privacidade dos dados do usuário, por isso é recomendado usar o método POST para dados sensíveis, como senhas.-->
+    <!--O atributo `method="dialog"` é usado em conjunto com a `<form>` dentro de um `<dialog>` element no HTML. Ele permite que o formulário seja enviado e o diálogo seja fechado automaticamente quando o usuário interage com o formulário.
+Por exemplo: -->
+<h2>outro</h2>
+
+  <form method="dialog">
+    <p>Confirmação</p>
+    <button value="yes">Sim</button>
+    <button value="no">Não</button>
+  </form>
+
+<input type="radio" name="sexo" id="masculino" value="masculino">
+<input type="radio" name="sexo" id="feminino" value="feminino">
+<!--é preciso incluir o mesmo name para o mesmo tipo de dado de determinada categoria mas você pode mudar o id e o value do input para distinguir as informações-->
+<!--Quando o usuário clica em um dos botões, o diálogo é fechado e o valor do botão clicado pode ser recuperado usando JavaScript. Este método é útil para criar interações rápidas e modais sem redirecionar ou enviar dados para o servidor.-->
+
+<select name="escolha" id="escolha">
+    <option value="opcao1">Opção 1</option>
+    <option value="opcao2">Opção 2</option>
+    <option value="opcao3">Opção 3</option>
+    <option value="opcao4">Opção 4</option>
+    <option value="opcao5">Opção 5</option>
+    <!--OBS: o select é usado para criar uma lista suspensa, onde o usuário pode escolher uma opção.--> 
+</select>
 
 </form>
 
+<!--Caracteres Especiais-->
 
+<h2>Caracteres Especiais</h2>
+<p>Alguns caracteres especiais precisam ser representados de forma diferente no HTML para evitar conflitos com a sintaxe. Por exemplo:</p>
+<p>&amp; - Ampersand (e comercial)</p>
+<p>&lt; - Menor que</p>
+<p>&gt; - Maior que</p>
+<p>&quot; - Aspas duplas</p>
+<p>&#39; - Aspas simples</p>
+<p>&nbsp; - Espaço não separável (non-breaking space)</p>
+<p>&copy; - Símbolo de copyright</p>
+<p>&reg; - Símbolo de marca registrada</p>
+<p>&euro; - Símbolo do euro</p>
+<p>&cent; - Símbolo de centavo</p>
+<p>&yen; - Símbolo do iene</p>
+<p>&sect; - Símbolo de seção</p>
+<p>&trade; - Símbolo de marca comercial</p>
+<p>&hellip; - Reticências</p>
+<p>&mdash; - Travessão</p>
+<p>&ndash; - Traço</p>
+<p>&bull; - Marcador de lista (bullet)</p>
+<p>&raquo; - Guillemets (aspas angulares)</p>
+<p>&laquo; - Guillemets (aspas angulares)</p>
+<p>&para; - Símbolo de parágrafo</p>
+<p>&deg; - Símbolo de grau</p>
+<p>&prime; - Símbolo de primo (usado em matemática)</p>
+<p>&sup1; - Expoente 1</p>
+<p>&sup2; - Expoente 2</p>
+<p>&sup3; - Expoente 3</p>
+<p>&frac14; - Fração 1/4</p>
+<p>&frac12; - Fração 1/2</p>
+<p>&frac34; - Fração 3/4</p>
+<p>&times; - Símbolo de multiplicação</p>
+<p>&divide; - Símbolo de divisão</p>
+<p>&plusmn; - Símbolo de mais ou menos</p>
+<p>&infin; - Símbolo de infinito</p>
+<p>&radic; - Símbolo de raiz quadrada</p>
+<p>&asymp; - Símbolo de aproximadamente igual</p>
+<p>&ne; - Símbolo de diferente</p>
+<p>&equiv; - Símbolo de equivalente</p>
+<p>&le; - Símbolo de menor ou igual</p>
+<p>&ge; - Símbolo de maior ou igual</p>
+<p>&sub; - Símbolo de subconjunto</p>
+<p>&sup; - Símbolo de superconjunto</p>
+<p>&cap; - Símbolo de interseção</p>
+<p>&cup; - Símbolo de união</p>
+<p>&there4; - Símbolo de portanto</p>
+....
 
 </body>
 
